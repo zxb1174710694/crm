@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.myCRM.Settings.dao.DicValueDao">
+    <select id="getAppellationList" resultType="DicValue">
+        select * from tbl_dic_value where typeCode = 'appellation'
+    </select>
+
+    <select id="getClueStateList" resultType="DicValue">
+        select * from tbl_dic_value where typeCode = 'clueState'
+    </select>
+
+    <select id="getReturnPriorityList" resultType="DicValue">
+        select * from tbl_dic_value where typeCode = 'returnPriority'
+    </select>
+
+    <select id="getReturnStateList" resultType="DicValue">
+        select * from tbl_dic_value where typeCode = 'returnState'
+    </select>
+
+    <select id="getSourceList" resultType="DicValue">
+        select * from tbl_dic_value where typeCode = 'source'
+    </select>
+
+    <select id="getStageList" resultType="DicValue">
+        select * from tbl_dic_value where typeCode = 'stage'
+    </select>
+
+    <select id="getTransactionTypeList" resultType="DicValue">
+        select * from tbl_dic_value where typeCode = 'transactionType'
+    </select>
+</mapper>
